@@ -1,0 +1,17 @@
+/*Include in order of importance*/
+
+@import 'reset';
+@import 'variables-color';
+@import 'fonts';
+@import 'variables-layout';
+@import 'general';
+@import 'functions';
+@import 'mixins';
+@import 'headings';
+@import 'wrappers';
+@import 'buttons';
+@import 'block-content';
+@import 'block-content-image.scss';
+
+@import 'site-header';
+@import 'site-footer';

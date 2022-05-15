@@ -33,7 +33,7 @@
 
 
         &:hover, &:focus {
-            color: $color-gray-light;
+            color: lighten($color-body-foreground, 30%);
         }
     }
 }
@@ -152,7 +152,7 @@
     }
 
     .site-logo {
-        display: block;
+        display: inline-block;
         margin-bottom: 20px;
     }
 }

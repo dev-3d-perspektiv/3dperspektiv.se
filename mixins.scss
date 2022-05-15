@@ -1,0 +1,8 @@
+@mixin section-margin {
+    margin-top: $section-spacing;
+    margin-bottom: $section-spacing;
+}
+@mixin section-padding {
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing;
+}

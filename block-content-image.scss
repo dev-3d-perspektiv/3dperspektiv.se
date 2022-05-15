@@ -1,6 +1,8 @@
 .content-image {
     @include section-margin;
 
+    color: #806b52;
+
     img {
         max-width: 100%;
         width: auto;
@@ -9,6 +11,10 @@
 }
 .content-image__content {
     margin-bottom: rem(30);
+}
+.content-image__sub-heading {
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 .content-image__title {
     margin-bottom: 30px;
@@ -19,7 +25,7 @@
     img {
         object-fit: cover;
         width: 100%;
-        max-height: 100%;
+        max-height: 400px;
     }
 }
 
@@ -35,18 +41,33 @@
     .content-image__image {
         flex-basis: 40%;
     }
+
+    .content-image--reverse {
+        flex-direction: row-reverse;
+
+        .content-image__content {
+            flex-basis: 55%;
+            margin-left: 5%;
+        }
+        .content-image__image {
+            flex-basis: 40%;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .content-image {    
-        display: flex;
-    }
     .content-image__content {
         flex-basis: 40%;
-        margin-right: 5%;
-        margin-bottom: 0;
     }
     .content-image__image {
         flex-basis: 55%;
+    }
+    .content-image--reverse {
+        .content-image__content {
+            flex-basis: 40%;
+        }
+        .content-image__image {
+            flex-basis: 55%;
+        }
     }
 }

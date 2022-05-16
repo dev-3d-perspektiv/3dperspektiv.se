@@ -6,3 +6,15 @@
     padding-top: $section-spacing;
     padding-bottom: $section-spacing;
 }
+
+
+@mixin media-min($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+@mixin media-max($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}

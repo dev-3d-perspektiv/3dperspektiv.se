@@ -9,10 +9,9 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@include media-min(rem(600)) {
     .intro-container {
         height: 75vh;
     }
 }
-
 

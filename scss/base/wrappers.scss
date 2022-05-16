@@ -1,35 +1,34 @@
 @mixin wrap-base {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: $page-margin;
-    padding-left: $page-margin;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $page-margin;
+  padding-left: $page-margin;
 }
 
 @mixin wrap {
-    @include wrap-base();
+  @include wrap-base();
 
-    max-width: $wrap-width;
+  max-width: $wrap-width;
 }
 
 @mixin wrap-wide {
-    @include wrap-base();
+  @include wrap-base();
 
-    max-width: $wrap-width-wide;
+  max-width: $wrap-width-wide;
 }
-   
-@mixin wrap-thin {
-    @include wrap-base();
 
-    max-width: $wrap-width-thin;
+@mixin wrap-thin {
+  @include wrap-base();
+
+  max-width: $wrap-width-thin;
 }
 
 .wrap {
-    @include wrap();
+  @include wrap();
 }
 .wrap-thin {
-    @include wrap-thin();
+  @include wrap-thin();
 }
 .wrap-wide {
-    @include wrap-wide();
+  @include wrap-wide();
 }
-

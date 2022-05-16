@@ -1,18 +1,18 @@
 /*Include in order of importance*/
 
-@import 'base/reset';
-@import 'base/variables-color';
-@import 'base/fonts';
-@import 'base/variables-layout';
-@import 'base/general';
-@import 'base/functions';
-@import 'base/mixins';
-@import 'base/headings';
-@import 'base/wrappers';
-@import 'components/buttons';
-@import 'base/block-content';
-@import 'modules/block-content-image.scss';
+@import "base/reset";
+@import "base/variables-color";
+@import "base/fonts";
+@import "base/variables-layout";
+@import "base/general";
+@import "base/functions";
+@import "base/mixins";
+@import "base/headings";
+@import "base/wrappers";
+@import "components/buttons";
+@import "base/block-content";
+@import "modules/block-content-image.scss";
 
-@import 'modules/intro';
-@import 'modules/site-header';
-@import 'modules/site-footer';
+@import "modules/intro";
+@import "modules/site-header";
+@import "modules/site-footer";

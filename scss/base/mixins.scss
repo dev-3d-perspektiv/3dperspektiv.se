@@ -1,20 +1,19 @@
 @mixin section-margin {
-    margin-top: $section-spacing;
-    margin-bottom: $section-spacing;
+  margin-top: $section-spacing;
+  margin-bottom: $section-spacing;
 }
 @mixin section-padding {
-    padding-top: $section-spacing;
-    padding-bottom: $section-spacing;
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
 }
-
 
 @mixin media-min($breakpoint) {
-    @media screen and (min-width: $breakpoint) {
-        @content;
-    }
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
 }
 @mixin media-max($breakpoint) {
-    @media screen and (max-width: $breakpoint) {
-        @content;
-    }
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
 }

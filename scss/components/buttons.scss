@@ -1,12 +1,12 @@
-
-
 .btn-primary {
-    background-color: $color-beige;
-    border-color: inherit;
+  background-color: $color-beige;
+  border-color: inherit;
 
-    &:hover, &:focus, &:active {
-        background-color: darken($color-beige, 10%);
-        box-shadow: none;
-        border-color: inherit;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($color-beige, 10%);
+    box-shadow: none;
+    border-color: inherit;
+  }
 }

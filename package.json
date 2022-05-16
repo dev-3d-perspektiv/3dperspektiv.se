@@ -2,11 +2,14 @@
   "name": "3dperspektiv.se",
   "version": "1.0.0",
   "scripts": {
-    "css": "sass main.scss main.css",
-    "css-w": "sass --watch main.scss main.css"
+    "css": "sass main.scss scss/main.css",
+    "css-w": "sass --watch scss/main.scss main.css"
   },
   "dependencies": {
     "@fontsource/open-sans": "^4.5.8",
     "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
   }
 }

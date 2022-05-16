@@ -2,19 +2,87 @@
 @import "~@fontsource/open-sans/300.css";
 @import "~@fontsource/open-sans/400.css";
 @import "~@fontsource/open-sans/700.css";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -61,7 +142,8 @@ body {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -76,39 +158,60 @@ a:hover, a:focus {
   cursor: pointer;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: 5px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Raleway", sans-serif;
 }
 
 .wrap {
+  padding-right: 25px;
+  padding-left: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 50px;
-  padding-left: 50px;
   max-width: 1200px;
+}
+@media screen and (min-width: 37.5rem) {
+  .wrap {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
 
 .wrap-thin {
+  padding-right: 25px;
+  padding-left: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 50px;
-  padding-left: 50px;
   max-width: 760px;
+}
+@media screen and (min-width: 37.5rem) {
+  .wrap-thin {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
 
 .wrap-wide {
+  padding-right: 25px;
+  padding-left: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 50px;
-  padding-left: 50px;
   max-width: 1400px;
+}
+@media screen and (min-width: 37.5rem) {
+  .wrap-wide {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
 
 .btn-primary {
@@ -122,22 +225,40 @@ h1, h2, h3 {
 }
 
 .block-content {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 37.5rem) {
+  .block-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .block-content h1 {
   color: #aba297;
 }
 
 .iframe-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 37.5rem) {
+  .iframe-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .content-image {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   color: #806b52;
+}
+@media screen and (min-width: 37.5rem) {
+  .content-image {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .content-image img {
   max-width: 100%;
@@ -167,7 +288,7 @@ h1, h2, h3 {
   max-height: 400px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 50rem) {
   .content-image {
     display: flex;
   }
@@ -193,7 +314,7 @@ h1, h2, h3 {
     flex-basis: 40%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   .content-image__content {
     flex-basis: 40%;
   }
@@ -219,7 +340,7 @@ h1, h2, h3 {
   height: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .intro-container {
     height: 75vh;
   }
@@ -368,11 +489,17 @@ h1, h2, h3 {
   }
 }
 .site-footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   min-height: 250px;
   background-color: #f1e0cb;
   font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 37.5rem) {
+  .site-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .site-footer__icon {
@@ -404,10 +531,12 @@ h1, h2, h3 {
   margin-right: 5px;
   max-width: 25px;
 }
-.site-footer__social a:hover, .site-footer__social a:focus {
+.site-footer__social a:hover,
+.site-footer__social a:focus {
   text-decoration: none;
 }
-.site-footer__social a:hover .text, .site-footer__social a:focus .text {
+.site-footer__social a:hover .text,
+.site-footer__social a:focus .text {
   text-decoration: underline;
 }
 
@@ -420,7 +549,7 @@ h1, h2, h3 {
   font-size: 1.125rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .site-footer__logo {
     flex-shrink: 0;
   }
@@ -440,7 +569,7 @@ h1, h2, h3 {
     max-width: 50%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5rem) {
   .site-footer__inner {
     display: flex;
   }
@@ -467,7 +596,7 @@ h1, h2, h3 {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 68.75rem) {
   .site-footer__logo {
     margin-right: 100px;
   }

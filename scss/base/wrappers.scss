@@ -1,8 +1,8 @@
 @mixin wrap-base {
+  @include page-margin;
+
   margin-left: auto;
   margin-right: auto;
-  padding-right: $page-margin;
-  padding-left: $page-margin;
 }
 
 @mixin wrap {

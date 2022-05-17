@@ -7,5 +7,19 @@
 }
 
 .iframe-container {
+  margin-top: 20px;
+}
+
+.section-demo {
   @include section-margin;
+
+  text-align: center;
+}
+
+.contact-block {
+  @include section-padding;
+
+  text-align: center;
+  background-color: $color-beige;
+  color: $color-dark;
 }

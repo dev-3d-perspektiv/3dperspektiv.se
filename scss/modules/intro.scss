@@ -1,5 +1,6 @@
 .intro-container {
   height: 50vh;
+  position: relative;
 
   img {
     object-fit: cover;
@@ -9,6 +10,15 @@
   }
 }
 
+.intro__content {
+  padding: 10px 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+}
 @include media-min(rem(600)) {
   .intro-container {
     height: 75vh;

@@ -1,9 +1,8 @@
 // General colors
-$color-beige: #f1e0cb;
-$color-beige-dark: #aba297;
+$color-beige: #ffe9c7;
 $color-gray-light: #c9c4c4;
-
-// Kanske använda denna beigA  rgba(192,181,169,1);//
+$color-beige-dark: #806b52;
+$color-dark: #111;
 
 // More specifics
-$color-body-foreground: #111;
+$color-body-foreground: $color-beige-dark;

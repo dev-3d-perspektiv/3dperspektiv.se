@@ -3,6 +3,7 @@
   padding: 30px;
   text-align: center;
   background-color: $color-beige;
+  color: $color-dark;
   font-family: "Raleway", sans-serif;
 }
 .site-logo {
@@ -23,16 +24,20 @@
   }
   li {
     margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
   a {
-    color: $color-body-foreground;
+    color: $color-dark;
     text-transform: uppercase;
     text-decoration: none;
     font-size: rem(18);
 
     &:hover,
     &:focus {
-      color: lighten($color-body-foreground, 30%);
+      color: lighten($color-dark, 30%);
     }
   }
 }

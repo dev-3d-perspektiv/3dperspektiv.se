@@ -7,5 +7,67 @@
 }
 
 .iframe-container {
+  margin-top: 20px;
+}
+
+.section-demo {
   @include section-margin;
+
+  font-size: rem(20);
+  text-align: center;
+}
+
+.contact-block {
+  @include section-padding;
+
+  background-color: $color-beige;
+  color: $color-dark;
+  font-size: rem(18);
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+.contact-block__heading {
+  margin-bottom: 30px;
+  text-align: center;
+  h2 {
+    font-size: rem(42);
+  }
+}
+
+.contact-block__image {
+  height: 350px;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@include media-min(rem(400)) {
+  .contact-block__image {
+    height: 400px;
+  }
+}
+@include media-min(rem(450)) {
+  .contact-block__image {
+    height: 500px;
+  }
+}
+@include media-min(rem(600)) {
+  .contact-block__inner {
+    display: flex;
+  }
+  .contact-block__image {
+    flex-basis: 50%;
+    height: auto;
+  }
+  .contact-block__content {
+    flex-basis: 50%;
+    margin-left: 30px;
+  }
 }

@@ -98,35 +98,34 @@
 }
 
 .contact-block__image {
-  height: 350px;
+  margin-bottom: 30px;
+  height: 300px;
+  text-align: center;
 
   img {
-    object-fit: cover;
     height: 100%;
-    width: 100%;
   }
 }
 
-@include media-min(rem(400)) {
-  .contact-block__image {
-    height: 400px;
-  }
-}
-@include media-min(rem(450)) {
-  .contact-block__image {
-    height: 500px;
-  }
-}
-@include media-min(rem(600)) {
+@include media-min(rem(650)) {
   .contact-block__inner {
     display: flex;
   }
   .contact-block__image {
+    margin-bottom: 0;
     flex-basis: 35%;
     height: auto;
+    align-self: flex-start;
   }
   .contact-block__content {
+    flex-grow: 1;
     flex-basis: 50%;
+    margin-left: 60px;
+  }
+}
+
+@include media-min(rem(900)) {
+  .contact-block__content {
     margin-left: 80px;
   }
 }

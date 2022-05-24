@@ -27,6 +27,13 @@
     padding-bottom: $section-spacing;
   }
 }
+@mixin section-padding-top {
+  padding-top: $section-spacing-small;
+
+  @include media-min(rem(600)) {
+    padding-top: $section-spacing;
+  }
+}
 
 @mixin page-margin {
   padding-right: $page-margin-small;

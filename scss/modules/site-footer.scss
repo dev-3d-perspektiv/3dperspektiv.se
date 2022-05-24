@@ -1,6 +1,6 @@
 .site-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include section-padding;
+
   background-color: $color-beige;
   color: $color-dark;
   font-family: "Raleway", sans-serif;

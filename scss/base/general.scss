@@ -1,7 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
-
 html,
 body {
   font-size: 16px;
@@ -17,4 +19,14 @@ a {
     text-decoration: underline;
     cursor: pointer;
   }
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+hr {
+  background-color: $color-dark;
+  opacity: 1;
+  width: 100%;
 }

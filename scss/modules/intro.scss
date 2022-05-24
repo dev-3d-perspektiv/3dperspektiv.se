@@ -10,15 +10,23 @@
   }
 }
 
-.intro__content {
-  padding: 10px 20px;
+.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.intro-content__inner {
+  padding: 10px 20px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 2px;
+  text-align: center;
 }
+
 @include media-min(rem(600)) {
   .intro-container {
     height: 75vh;

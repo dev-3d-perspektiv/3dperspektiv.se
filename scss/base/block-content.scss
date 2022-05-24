@@ -72,6 +72,12 @@
   a {
     display: inline-flex;
     align-items: center;
+
+    &:hover,
+    &:focus {
+      color: lighten($color-dark, 30%);
+      text-decoration: none;
+    }
   }
   li {
     margin-bottom: 15px;

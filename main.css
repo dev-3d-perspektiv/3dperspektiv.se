@@ -381,6 +381,9 @@ h3 {
     height: auto;
     align-self: flex-start;
   }
+  .contact-block__image img {
+    height: auto;
+  }
 
   .contact-block__content {
     flex-grow: 1;

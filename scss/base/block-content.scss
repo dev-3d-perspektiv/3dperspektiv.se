@@ -116,6 +116,10 @@
     flex-basis: 35%;
     height: auto;
     align-self: flex-start;
+
+    img {
+      height: auto;
+    }
   }
   .contact-block__content {
     flex-grow: 1;

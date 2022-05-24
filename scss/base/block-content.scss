@@ -11,10 +11,39 @@
 }
 
 .section-demo {
-  @include section-margin;
+  @include section-padding;
 
+  background-color: $color-beige;
   font-size: rem(20);
   text-align: center;
+  color: $color-dark;
+}
+
+.social-section {
+  @include section-margin;
+
+  text-align: center;
+
+  h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+  a {
+    color: $color-dark;
+    display: inline-flex;
+    align-items: center;
+    font-size: rem(40);
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+  img {
+    margin-right: 30px;
+    max-width: 60px;
+  }
 }
 
 .contact-block {

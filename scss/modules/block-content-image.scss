@@ -1,5 +1,11 @@
 .content-image {
   @include section-margin;
+
+  &:first-child {
+    @include section-padding-top;
+
+    margin-top: 0;
+  }
 }
 .content-image__content {
   margin-bottom: rem(30);

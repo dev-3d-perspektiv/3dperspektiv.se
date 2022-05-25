@@ -1,9 +1,5 @@
 .block-content {
   @include section-margin;
-
-  h1 {
-    color: $color-beige-dark;
-  }
 }
 
 .iframe-container {
@@ -24,15 +20,12 @@
 
   text-align: center;
 
-  h1 {
-    margin-bottom: 30px;
-    font-size: 50px;
-  }
   a {
     color: $color-dark;
     display: inline-flex;
     align-items: center;
-    font-size: rem(40);
+    font-size: rem(30);
+    line-height: 1;
 
     &:hover,
     &:focus {
@@ -41,8 +34,19 @@
     }
   }
   img {
-    margin-right: 30px;
-    max-width: 60px;
+    margin-right: 20px;
+    max-width: 35px;
+  }
+}
+@include media-min(rem(600)) {
+  .social-section {
+    a {
+      font-size: rem(40);
+    }
+    img {
+      margin-right: 30px;
+      max-width: 50px;
+    }
   }
 }
 
@@ -51,7 +55,6 @@
 
   background-color: $color-beige;
   color: $color-dark;
-  font-size: rem(18);
 
   .btn {
     padding: 15px 30px;

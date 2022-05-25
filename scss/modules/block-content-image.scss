@@ -15,7 +15,7 @@
   text-transform: uppercase;
 }
 .content-image__title {
-  margin-bottom: 30px;
+  margin-bottom: rem(15);
 }
 .content-image__image {
   max-height: 400px;
@@ -35,6 +35,9 @@
     flex-basis: 55%;
     margin-right: 5%;
     margin-bottom: 0;
+  }
+  .content-image__title {
+    margin-bottom: rem(30);
   }
   .content-image__image {
     flex-basis: 40%;

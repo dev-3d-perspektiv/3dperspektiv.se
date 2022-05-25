@@ -1,7 +1,4 @@
 /*Include in order of importance*/
-@import "~@fontsource/open-sans/300.css";
-@import "~@fontsource/open-sans/400.css";
-@import "~@fontsource/open-sans/700.css";
 html,
 body,
 div,
@@ -520,49 +517,23 @@ h3 {
   font-family: "Raleway", sans-serif;
 }
 
-.site-logo {
-  display: block;
-}
-.site-logo:hover, .site-logo:focus {
-  text-decoration: none;
-}
-
 .site-header__logo {
   max-width: 130px;
 }
-.site-header__logo img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
 
-.site-header-nav ul {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.site-header-nav li {
-  margin-right: 30px;
-}
-.site-header-nav li:last-child {
-  margin-right: 0;
-}
-.site-header-nav a {
-  color: #111;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.125rem;
-}
-.site-header-nav a:hover, .site-header-nav a:focus {
-  color: #5e5e5e;
-}
-
-.site-header__toggle button {
+.site-header__toggle {
   position: relative;
   width: 40px;
   height: 40px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.site-header__nav a {
+  text-transform: uppercase;
+}
+.site-header__nav a:hover, .site-header__nav a:focus {
+  text-decoration: none;
 }
 
 .menu-toggle-icon {
@@ -572,15 +543,7 @@ h3 {
   top: 50%;
   right: 0;
   margin-top: -1px;
-}
-.menu-toggle-icon::before {
-  top: 0;
-  transform: rotate(45deg);
-  transition: transform 0.15s ease;
-}
-.menu-toggle-icon::after {
-  bottom: 0;
-  transform: rotate(-45deg);
+  background-color: currentColor;
 }
 .menu-toggle-icon::before, .menu-toggle-icon::after {
   content: "";
@@ -591,34 +554,28 @@ h3 {
   height: 2px;
   background-color: currentColor;
 }
-
-.collapsed .menu-toggle-icon {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: currentColor;
-  transition: background-color 0.15s ease;
-  top: 50%;
-  right: 0;
-  margin-top: -1px;
-}
-.collapsed .menu-toggle-icon::before {
+.menu-toggle-icon::before {
   top: 0;
   transform: translateY(-10px);
   transition: transform 0.15s ease;
 }
-.collapsed .menu-toggle-icon::after {
+.menu-toggle-icon::after {
   bottom: 0;
   transform: translateY(10px);
 }
-.collapsed .menu-toggle-icon::before, .collapsed .menu-toggle-icon::after {
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: currentColor;
+
+.nav--open .menu-toggle-icon {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.15s ease;
+}
+.nav--open .menu-toggle-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+}
+.nav--open .menu-toggle-icon::after {
+  bottom: 0;
+  transform: rotate(-45deg);
 }
 
 @media only screen and (max-width: 800px) {
@@ -631,35 +588,33 @@ h3 {
     justify-content: space-between;
   }
 
-  .site-header-nav {
+  .site-header__nav {
     display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    z-index: 10;
+    background-color: #ffe9c7;
+  }
+  .nav--open .site-header__nav {
+    display: block;
+  }
+  .site-header__nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 22px;
+    text-align: right;
+  }
+  .site-header__nav a {
+    padding: 20px 25px;
+    display: block;
+    font-weight: bold;
+  }
+  .site-header__nav a:hover, .site-header__nav a:focus {
+    background-color: #ffdfae;
   }
 }
-.site-header__toggle nav {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  width: 100%;
-  z-index: 10;
-  background-color: #ffe9c7;
-}
-.site-header__toggle nav li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 22px;
-  text-align: right;
-}
-.site-header__toggle nav a {
-  padding: 20px 25px;
-  display: block;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.site-header__toggle nav a:hover, .site-header__toggle nav a:focus {
-  background-color: #ffd594;
-  text-decoration: none;
-}
-
 @media screen and (min-width: 37.5rem) {
   .site-header {
     padding-top: 30px;
@@ -667,14 +622,31 @@ h3 {
   }
 }
 @media only screen and (min-width: 800px) {
-  .site-header__toggle {
-    display: none;
-  }
-
   .site-header__logo {
     display: inline-block;
     max-width: 200px;
     margin-bottom: 10px;
+  }
+
+  .site-header__toggle {
+    display: none;
+  }
+
+  .site-header__nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .site-header__nav li {
+    margin-right: 30px;
+  }
+  .site-header__nav li:last-child {
+    margin-right: 0;
+  }
+  .site-header__nav a {
+    font-size: 1.125rem;
+  }
+  .site-header__nav a:hover, .site-header__nav a:focus {
+    color: #5e5e5e;
   }
 }
 .site-footer {

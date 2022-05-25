@@ -1,12 +1,13 @@
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 body {
   margin: 0;
 }
 html,
 body {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
 }
 a {
@@ -29,4 +30,10 @@ hr {
   background-color: $color-dark;
   opacity: 1;
   width: 100%;
+}
+
+@include media-min(rem(600)) {
+  .running-text {
+    font-size: rem(18);
+  }
 }

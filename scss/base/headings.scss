@@ -1,17 +1,68 @@
-$h1: 42px;
-$h2: 32px;
-$h3: 22px;
+/* Headings */
 
-h1,
-.h1 {
-  font-size: rem(32);
+$breakpoint-font-size-small: rem(600);
+
+$h1: rem(42);
+$h1-medium: rem(32);
+$h1-small: rem(26);
+
+$h2: rem(32);
+$h2-small: rem(24);
+
+$h3: rem(16);
+
+@mixin h {
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
-  margin: 0;
   margin-bottom: 5px;
+}
+
+@mixin h1 {
+  font-size: $h1-small;
+  text-transform: none;
+  font-weight: bold;
+
+  @include media-min($breakpoint-font-size-small) {
+    font-size: $h1-medium;
+  }
+
+  @include media-min(rem(1000)) {
+    font-size: $h1;
+  }
+}
+@mixin h2 {
+  font-size: $h2-small;
+  text-transform: none;
+  font-weight: bold;
+
+  @include media-min($breakpoint-font-size-small) {
+    font-size: $h2;
+  }
+}
+@mixin h3 {
+  font-size: $h3;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 h1,
 h2,
-h3 {
-  font-family: "Raleway", sans-serif;
+h3,
+h4,
+h4,
+h6 {
+  @include h;
+}
+
+h1,
+.h1 {
+  @include h1;
+}
+h2,
+.h2 {
+  @include h2;
+}
+h3,
+.h3 {
+  @include h3;
 }

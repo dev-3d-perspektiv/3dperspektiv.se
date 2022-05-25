@@ -1,9 +1,5 @@
 .block-content {
   @include section-margin;
-
-  h1 {
-    color: $color-beige-dark;
-  }
 }
 
 .iframe-container {
@@ -26,7 +22,6 @@
 
   h1 {
     margin-bottom: 30px;
-    font-size: 50px;
   }
   a {
     color: $color-dark;

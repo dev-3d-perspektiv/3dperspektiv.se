@@ -403,10 +403,14 @@ h3 {
     margin-bottom: 60px;
   }
 }
-.content-image img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+.content-image:first-child {
+  padding-top: 30px;
+  margin-top: 0;
+}
+@media screen and (min-width: 37.5rem) {
+  .content-image:first-child {
+    padding-top: 60px;
+  }
 }
 
 .content-image__content {

@@ -1,11 +1,5 @@
 .content-image {
   @include section-margin;
-
-  img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-  }
 }
 .content-image__content {
   margin-bottom: rem(30);

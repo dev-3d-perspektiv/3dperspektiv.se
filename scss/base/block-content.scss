@@ -20,14 +20,12 @@
 
   text-align: center;
 
-  h1 {
-    margin-bottom: 30px;
-  }
   a {
     color: $color-dark;
     display: inline-flex;
     align-items: center;
-    font-size: rem(40);
+    font-size: rem(30);
+    line-height: 1;
 
     &:hover,
     &:focus {
@@ -36,8 +34,19 @@
     }
   }
   img {
-    margin-right: 30px;
-    max-width: 60px;
+    margin-right: 20px;
+    max-width: 35px;
+  }
+}
+@include media-min(rem(600)) {
+  .social-section {
+    a {
+      font-size: rem(40);
+    }
+    img {
+      margin-right: 30px;
+      max-width: 50px;
+    }
   }
 }
 

@@ -2,8 +2,8 @@
   "name": "3dperspektiv.se",
   "version": "1.0.0",
   "scripts": {
-    "css": "sass main.scss scss/main.css",
-    "css-w": "sass --watch scss/main.scss main.css"
+    "css": "sass scss/main.scss main.css --style compressed",
+    "css-w": "sass --watch scss/main.scss main.css --style compressed"
   },
   "devDependencies": {
     "prettier": "^2.6.2"

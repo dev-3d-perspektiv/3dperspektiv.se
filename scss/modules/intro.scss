@@ -34,6 +34,15 @@
 
 @include media-min(rem(600)) {
   .intro-container {
-    height: 75vh;
+    max-height: calc(100vh - 142px);
+  }
+  .intro-content--small {
+    display: none;
+  }
+}
+
+@include media-max(rem(600)) {
+  .intro-content {
+    display: none;
   }
 }

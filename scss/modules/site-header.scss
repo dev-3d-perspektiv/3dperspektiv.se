@@ -120,8 +120,8 @@ $breakpoint-site-header-toggle: 800px;
 
 @include media-min(rem(600)) {
   .site-header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
   }
 }
 
@@ -129,11 +129,16 @@ $breakpoint-site-header-toggle: 800px;
 @media only screen and (min-width: $breakpoint-site-header-toggle) {
   .site-header__logo {
     display: inline-block;
-    max-width: 200px;
+    max-width: 160px;
     margin-bottom: 10px;
   }
   .site-header__toggle {
     display: none;
+  }
+  .site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .site-header__nav {
     ul {
@@ -148,7 +153,7 @@ $breakpoint-site-header-toggle: 800px;
       }
     }
     a {
-      font-size: rem(18);
+      font-size: rem(22);
 
       &:hover,
       &:focus {

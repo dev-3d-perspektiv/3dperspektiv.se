@@ -12,8 +12,8 @@ $h2-small: rem(24);
 $h3: rem(16);
 
 @mixin h {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-family: $font-stack-alt;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   line-height: 1.25;
 }
@@ -21,7 +21,7 @@ $h3: rem(16);
 @mixin h1 {
   font-size: $h1-small;
   text-transform: none;
-  font-weight: bold;
+  font-weight: 500;
 
   @include media-min($breakpoint-font-size-small) {
     font-size: $h1-medium;
@@ -34,7 +34,7 @@ $h3: rem(16);
 @mixin h2 {
   font-size: $h2-small;
   text-transform: none;
-  font-weight: bold;
+  font-weight: 500;
 
   @include media-min($breakpoint-font-size-small) {
     font-size: $h2;

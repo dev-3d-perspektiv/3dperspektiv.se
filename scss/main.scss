@@ -1,15 +1,18 @@
 /*Include in order of importance*/
 
+@import "../node_modules/@fontsource/raleway/index.css";
+
 @import "base/reset";
 @import "base/variables-color";
+@import "variables-type";
 @import "base/fonts";
 @import "base/variables-layout";
 @import "base/functions";
 @import "base/mixins";
 @import "base/general";
-@import "base/headings";
 @import "base/wrappers";
 @import "components/buttons";
+@import "base/headings";
 @import "base/block-content";
 @import "modules/block-content-image.scss";
 

@@ -2,8 +2,25 @@
   @include section-margin;
 }
 
+.iframe-wrap {
+  @include wrap-base;
+
+  max-width: rem(1000);
+}
 .iframe-container {
   margin-top: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .section-demo {

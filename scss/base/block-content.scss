@@ -38,31 +38,52 @@
   text-align: center;
 
   a {
-    color: $color-dark;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: rem(30);
-    line-height: 1;
+    color: $color-dark;
+    font-size: rem(20);
 
     &:hover,
     &:focus {
       opacity: 0.8;
       text-decoration: none;
     }
+
+    .text {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 50%;
+        width: 3px;
+        height: 140%;
+        transform: translate(-50%, -50%);
+        background-color: $color-dark;
+      }
+    }
   }
   img {
-    margin-right: 20px;
-    max-width: 35px;
+    margin-left: 20px;
+    max-width: 30px;
   }
 }
 @include media-min(rem(600)) {
   .social-section {
     a {
       font-size: rem(40);
+
+      .text {
+        &::after {
+          right: -23px;
+        }
+      }
     }
     img {
-      margin-right: 30px;
       max-width: 50px;
+      margin-left: 40px;
     }
   }
 }

@@ -11,38 +11,8 @@
   }
 }
 
-.intro-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-.intro-content__inner {
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 2px;
-  text-align: center;
-
-  h1 {
-    margin-bottom: 0;
-  }
-}
-
 @include media-min(rem(600)) {
   .intro-container {
     max-height: calc(100vh - 142px);
-  }
-  .intro-content--small {
-    display: none;
-  }
-}
-
-@include media-max(rem(600)) {
-  .intro-content {
-    display: none;
   }
 }

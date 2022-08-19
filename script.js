@@ -1,6 +1,7 @@
 // Simple site script.
 
 const toggle = document.querySelector("#toggle");
+const menu = document.querySelector("#site-header-nav");
 const htmlElement = document.documentElement;
 
 const toggleClass = "nav--open";
@@ -8,6 +9,14 @@ const toggleClass = "nav--open";
 toggle.addEventListener("click", function (e) {
   e.preventDefault();
   handleToggle();
+});
+
+menu.addEventListener("click", closeMenu);
+
+window.addEventListener("click", function (e) {
+  if (!toggle.contains(e.target)) {
+    closeMenu();
+  }
 });
 
 document.body.addEventListener("keydown", function (e) {
@@ -23,4 +32,10 @@ function handleToggle() {
     "aria-expanded",
     toggle.getAttribute("aria-expanded") === "true" ? "false" : "true"
   );
+}
+
+function closeMenu() {
+  if (htmlElement.classList.contains(toggleClass)) {
+    toggle.click();
+  }
 }

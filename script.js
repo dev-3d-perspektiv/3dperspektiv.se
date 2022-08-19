@@ -14,9 +14,7 @@ toggle.addEventListener("click", function (e) {
 menu.addEventListener("click", closeMenu);
 
 window.addEventListener("click", function (e) {
-  if (toggle.contains(e.target)) {
-    // Do nothing
-  } else {
+  if (!toggle.contains(e.target)) {
     closeMenu();
   }
 });
